@@ -9,14 +9,14 @@ import PrioritiesSection from './PrioritiesSection';
 
 function App() {
   return (
-    <div className='container'>
+    <div className='wrapper'>
       <header>
-        <h1>TODO LIST</h1>
+        <h1>TO DO LIST</h1>
       </header>
-      <section>
+      <section className='quote'>
         <InspirationalQuote/>
       </section>
-      <section>
+      <section className='date'>
         <DateRow/>
       </section>
       <div className="flex-container">

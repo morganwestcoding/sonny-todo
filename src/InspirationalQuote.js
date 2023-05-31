@@ -18,7 +18,7 @@ function InspirationalQuote() {
 
   return (
     <div>
-      <h2>Inspirational Quote</h2>
+      <h2>Inspirational Quote:</h2>
       <p>{quote}</p>
     </div>
   );
