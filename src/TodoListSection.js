@@ -12,7 +12,7 @@ function TodoListSection() {
     setInput("");
   }
   return (
-    <div className='TodoListSection'>
+    <div>
       <h1>Morgan's Todo List</h1>
       <form>
          <input value={input}

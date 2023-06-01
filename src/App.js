@@ -5,34 +5,28 @@ import DateRow from './DateRow';
 import TodoListSection from './TodoListSection';
 import NotesSection from './NotesSection';
 import TomorrowTaskSection from './TomorrowTaskSection';
-import PrioritiesSection from './PrioritiesSection';
 
 function App() {
   return (
     <div className='wrapper'>
-      <header>
+      <header className='header'>
         <h1>TO DO LIST</h1>
       </header>
-      <section className='quote'>
+      <div className='quote'>
         <InspirationalQuote/>
-      </section>
-      <section className='date'>
+      </div>
+      <div className='date'>
         <DateRow/>
-      </section>
-      <div className="flex-container">
-        <div className="left-section">
-          <PrioritiesSection/>
+      </div>
+        <div className="ToDoListSection">
+          <TodoListSection/>
         </div>
-        <div className="right-section">
+        <div className="MonthPriorities">
           <TomorrowTaskSection/>
         </div>
-      </div>
-      <section>
+      <footer className='footer'>
         <NotesSection/>
-      </section>
-      <section>
-        <TodoListSection/>
-      </section>
+      </footer>
     </div>
   );
 }

@@ -1,78 +1,49 @@
-/* CSS for TodoApp component */
-header {
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
   text-align: center;
-  padding: 20px;
-  width: 100%;
+}
+
+.wrapper>*{
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 25px;
+}
+.header {
+  background: red;
+  height: 120px;
   /* Add this line to center the header */
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+.footer{
+  background: yellow;
+  height:80px ;
 }
 
 .quote {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(237, 243, 151);
-  width: 80%;
-  border: 1px solid #000;
-  padding: 20px 20px;
+  text-align: left;
+  background: darkgoldenrod;
+  height: 80px;
+  font-size: 14px;
 }
 
 .date {
-  display: flex;
-  align-items: center;
-}
-
-.date h2,
-.date p {
-  margin: 0;
-  line-height: 1;
-}
-
-.left-section {
-  flex: 1;
-}
-
-.right-section {
-  flex: 1;
-}
-
-/* CSS for each section component */
-section {
-  margin: 20px;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 1.2rem;
-}
-
-/* CSS for layout positioning */
-.container>* {
-  flex-basis: 50%;
-}
-
-.top-right {
-  align-self: flex-start;
-  text-align: right;
-}
-
-.bottom-left {
-  align-self: flex-end;
   text-align: left;
+  background: darkgoldenrod;
+  height: 80px;
+  font-size: 14px;
+
 }
 
-.bottom-right {
-  align-self: flex-end;
-  text-align: right;
+.main {
+  display: flex;;
+}
+
+.TodoListSection {
+  background: lime;
+}
+
+.MonthPriorities {
+  background: orange;
 }
