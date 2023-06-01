@@ -8,26 +8,16 @@ import TomorrowTaskSection from './TomorrowTaskSection';
 
 function App() {
   return (
-    <div className='wrapper'>
-      <header className='header'>
-        <h1>TO DO LIST</h1>
-      </header>
-      <div className='quote'>
-        <InspirationalQuote/>
-      </div>
-      <div className='date'>
-        <DateRow/>
-      </div>
-        <div className="ToDoListSection">
-          <TodoListSection/>
-        </div>
-        <div className="MonthPriorities">
-          <TomorrowTaskSection/>
-        </div>
-      <footer className='footer'>
-        <NotesSection/>
-      </footer>
-    </div>
+<div className='container'>
+    <header className='header'><h1>TODO LIST</h1></header>
+        <div className='item'><InspirationalQuote/></div>
+        <div className='item'><DateRow/></div>
+    <main>
+        <div className="item ToDoListSection"><TodoListSection/></div>
+        <div className="item TomorrowTaskSection"><TomorrowTaskSection/></div>
+    </main>
+    <footer className='item'><NotesSection/></footer>
+</div>
   );
 }
 

@@ -1,49 +1,59 @@
-.wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  text-align: center;
+html {
+  background: #000000;
 }
 
-.wrapper>*{
+h2,
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  display: flex;
+
+}
+
+.header {
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  padding: 1rem 1rem;
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+  margin: 10px;
+}
+
+.item {
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  padding: 1rem 1rem;
+  background: #339bea;
+  border: 6px solid #00467b;
+  border-radius: 25px;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.ToDoListSection {
+  background-color: #72ba92;
+  border: 6px solid #146538;
+  color: white;
+  order: 1;
+  flex: 1;
+  border-radius: 25px;
   padding: 10px;
   margin: 10px;
-  flex: 1 100%;
+  text-transform: uppercase;
+    }
+
+.TomorrowTaskSection {
+  background-color: #72ba92;
+  border: 6px solid #146538;
+  color: white;
+  order: 2;
+  flex: 1;
   border-radius: 25px;
-}
-.header {
-  background: red;
-  height: 120px;
-  /* Add this line to center the header */
-}
-
-.footer{
-  background: yellow;
-  height:80px ;
-}
-
-.quote {
-  text-align: left;
-  background: darkgoldenrod;
-  height: 80px;
-  font-size: 14px;
-}
-
-.date {
-  text-align: left;
-  background: darkgoldenrod;
-  height: 80px;
-  font-size: 14px;
-
-}
-
-.main {
-  display: flex;;
-}
-
-.TodoListSection {
-  background: lime;
-}
-
-.MonthPriorities {
-  background: orange;
+  padding: 10px;
+  margin: 10px;
+  text-transform: uppercase;
 }

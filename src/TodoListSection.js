@@ -30,4 +30,4 @@ function TodoListSection() {
   )
 }
 
-export default TodoListSection
+export default TodoListSection;
