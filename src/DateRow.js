@@ -5,7 +5,7 @@ function DateRow() {
 
   return (
 <div>
-     <h2>{currentDate}</h2>   
+     <h3>{currentDate}</h3>   
 </div>
    
     );

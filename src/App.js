@@ -9,14 +9,14 @@ import TomorrowTaskSection from './TomorrowTaskSection';
 function App() {
   return (
 <div className='container'>
-    <header className='header'><h1>TODO LIST</h1></header>
+    <header className='header'><h1>TODO LIST</h1>
+    <DateRow/></header>
         <div className='item'><InspirationalQuote/></div>
-        <div className='item'><DateRow/></div>
     <main>
         <div className="item ToDoListSection"><TodoListSection/></div>
         <div className="item TomorrowTaskSection"><TomorrowTaskSection/></div>
     </main>
-    <footer className='item'><NotesSection/></footer>
+    <footer className='item Notes'><NotesSection/></footer>
 </div>
   );
 }

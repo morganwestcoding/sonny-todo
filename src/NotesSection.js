@@ -22,10 +22,6 @@ function TodoListSection() {
       <button type="submit" onClick={addTodo}>Add to List</button>
       </form>
 
-      <h2>List of Todos</h2>
-      {todos.map((todo) => (
-        <p>{todo}</p>
-      ))}
     </div>
   )
 }

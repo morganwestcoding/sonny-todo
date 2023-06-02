@@ -1,10 +1,12 @@
-html {
-  background: #000000;
+html,
+body {
+  height: 100%;
+  background-image: linear-gradient(rgb(25, 61, 172), rgb(0, 0, 0));
 }
 
 h2,
 h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 main {
@@ -17,7 +19,6 @@ main {
   line-height: 1;
   text-align: center;
   padding: 1rem 1rem;
-  background: rgb(0, 0, 0);
   color: #ffffff;
   margin: 10px;
 }
@@ -27,33 +28,39 @@ main {
   line-height: 1;
   text-align: center;
   padding: 1rem 1rem;
-  background: #339bea;
-  border: 6px solid #00467b;
+  background-color: rgb(27, 39, 75);
   border-radius: 25px;
   color: #ffffff;
   margin: 10px;
 }
 
 .ToDoListSection {
-  background-color: #72ba92;
-  border: 6px solid #146538;
+  background-color: rgb(27, 39, 75);
   color: white;
   order: 1;
   flex: 1;
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
-  text-transform: uppercase;
     }
 
 .TomorrowTaskSection {
-  background-color: #72ba92;
-  border: 6px solid #146538;
+  background-color: rgb(27, 39, 75);
   color: white;
   order: 2;
   flex: 1;
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
-  text-transform: uppercase;
+}
+
+.Notes {
+  
+  background-color: transparent;
+  color: white;
+  order: 2;
+  flex: 1;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
 }
