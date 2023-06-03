@@ -1,16 +1,17 @@
 html,
 body {
   height: 100%;
-  background-image: linear-gradient(rgb(25, 61, 172), rgb(0, 0, 0));
+  background-image: linear-gradient(rgb(64, 186, 131), rgb(0, 34, 15));
 }
 
 h2,
 h1 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 main {
   display: flex;
+  flex-wrap: wrap;
 
 }
 
@@ -27,6 +28,8 @@ main {
   font-size: 1rem;
   line-height: 1;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   padding: 1rem 1rem;
   background-color: rgb(27, 39, 75);
   border-radius: 25px;
@@ -63,4 +66,36 @@ main {
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+     }
+
+button {
+
+  font: 18px Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  display: block;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"] {
+  transition: all 0.2s ease-in-out;
+  font: 18px Helvetica, Arial, sans-serif;
+  border: none;
+  background: #1aaf75;
+  color: #fff;
+  padding: 16px 40px;
+  border-radius: 25px;
 }

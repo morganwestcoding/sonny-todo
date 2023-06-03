@@ -13,7 +13,7 @@ function TodoListSection() {
   }
   return (
     <div>
-      <h1>Tomorrow List</h1>
+      <h1>Tomorrow's TODOs</h1>
       <form>
          <input value={input}
       onChange={(e) => setInput(e.target.value)} 
