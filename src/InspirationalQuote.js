@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 function InspirationalQuote() {
   const [quote, setQuote] = useState('');
+  const [author, setAuthor] = useState('');
 
   useEffect(() => {
     fetch('https://type.fit/api/quotes')
@@ -10,6 +11,7 @@ function InspirationalQuote() {
         const randomIndex = Math.floor(Math.random() * data.length);
         const randomQuote = data[randomIndex];
         setQuote(randomQuote.text);
+        setAuthor(randomQuote.author);
       })
       .catch((error) => {
         console.error('Error fetching quote:', error);
@@ -20,6 +22,7 @@ function InspirationalQuote() {
     <div>
       <h2>Inspirational Quote:</h2>
       <p>{quote}</p>
+      <p>- {author}</p>
     </div>
   );
 }
