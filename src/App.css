@@ -108,8 +108,23 @@ button[type="submit"] {
   transition: all 0.2s ease-in-out;
   font: 18px Helvetica, Arial, sans-serif;
   border: none;
-  background: #82a296;
+  background: #92B4A7;
   color: #fff;
   padding: 16px 40px;
   border-radius: 25px;
+}
+
+.completed .task {
+  text-decoration: line-through;
+}
+
+.icons {
+  margin-left: 10px;
+  color: #92B4A7;
+  /* Adjust the value as needed */
+}
+
+.icon-spacing {
+  margin-left: 10px;
+  /* Adjust the value as needed */
 }
